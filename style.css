@@ -1,0 +1,47 @@
+:root {
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
+  --color-brand: #819b57;
+}
+body {
+  color: var(--color-primary-dark);
+}
+ul {
+  list-style-type: none;
+}
+.button {
+  color: var(--color-primary-light);
+  background: var(--color-brand);
+  border: 2px solid var(--color-brand);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:hover {
+  color: #465929;
+  background-color: transparent;
+}
+.link {
+  color: var(--color-primary-light);
+}
+.link:hover {
+  color: var(--color-brand);
+}
+.main-title {
+  color: var(--color-primary-light);
+}
+.main-title .acent {
+  color: var(--color-brand);
+}
+.adventeges-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand);
+}
+.section-title {
+  color: var(--color-primary-dark);
+}
+.section-title .acent {
+  color: var(--color-brand);
+}
+.acent {
+  color: var(--color-brand);
+}
