@@ -9,24 +9,30 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./img/logo.svg" alt="Логотип сучасної пекарні" />
-          </a>
-          <ul>
-            <li>
-              <a class="header-link" href="#tradition-section">Наші традицій</a>
-            </li>
-            <li>
-              <a class="header-link" href="#chefs-section"> Шеф-кухарі</a>
-            </li>
-            <li><a class="header-link" href="#format-section"> Формати</a></li>
-            <li>
-              <a class="header-link" href="#contact-section"> Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header__nav">
+            <a href="./index.html">
+              <img src="./img/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="header-link" href="#tradition-section"
+                  >Наші традицій</a
+                >
+              </li>
+              <li>
+                <a class="header-link" href="#chefs-section"> Шеф-кухарі</a>
+              </li>
+              <li>
+                <a class="header-link" href="#format-section"> Формати</a>
+              </li>
+              <li>
+                <a class="header-link" href="#contact-section"> Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -37,33 +43,39 @@
           </h1>
         </div>
       </section>
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="hiden">Наші переваги</h2>
           <ul class="advantages-list">
-            <li class="advantages-section__item">Великий попит на ринку</li>
-            <li class="advantages-section__item">
-              Доступні за бюджетом формати
-            </li>
-            <li class="advantages-section__item">
-              Досвідчена управлінська команда
-            </li>
+            <li class="advantages__item">Великий попит на ринку</li>
+            <li class="advantages__item">Доступні за бюджетом формати</li>
+            <li class="advantages__item">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
       <section class="tradition-section section" id="tradition-section">
         <div class="container">
-          <h2 class="traditions-title section__title">Новий формат традицій</h2>
-          <img src="./img/baker-man.jpg" alt="Чоловік с посмішкою" />
-          <p>
-            <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-            зберегла смак традиційної випічки та натуральність інгредієнтів.
-          </p>
-          <p>
-            Ми працюємо як найвідоміші мережі—
-            <span>5 хвилин і замовлення готове.</span> А ще у наших пекарень
-            стильний дизайн та висока якість обслуговування!
-          </p>
+          <div class="tradition-container">
+            <div class="tradition-content">
+              <h2 class="traditions-title section__title">
+                Новий формат традицій
+              </h2>
+
+              <p class="tradition-text">
+                <span class="text-brand">shop bakery</span> — це пекарня, яка
+                взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="tradition-text-limited">
+                Ми працюємо як найвідоміші мережі—
+                <span class="text-brand">5 хвилин і замовлення готове.</span> А
+                ще у наших пекарень стильний дизайн та висока якість
+                обслуговування!
+              </p>
+            </div>
+
+            <img src="./img/baker-man.jpg" alt="Чоловік с посмішкою" />
+          </div>
         </div>
       </section>
       <section class="section" id="chefs-section">
@@ -98,15 +110,42 @@
       <section class="section" id="format-section">
         <div class="container">
           <h2 class="format-title section__title">Формати</h2>
-          <ul>
-            <li>
-              <article><h3 lang="en">Walrus</h3></article>
+          <ul class="format-list">
+            <li class="format-item">
+              <article class="format-card">
+                <h3 lang="en">Walrus</h3>
+                <p>Площа: до 120 м2</p>
+                <p>Меню: розширене меню</p>
+                <p>
+                  Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                  офіціанти-різнороби
+                </p>
+                <p>Посадкові місця: є</p>
+              </article>
             </li>
-            <li>
-              <article><h3 lang="en">Horseshoe</h3></article>
+            <li class="format-item">
+              <article class="format-card">
+                <h3 lang="en">Horseshoe</h3>
+                <p>Площа: до 120 м2</p>
+                <p>Меню: розширене меню</p>
+                <p>
+                  Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                  офіціанти-різнороби
+                </p>
+                <p>Посадкові місця: є</p>
+              </article>
             </li>
-            <li>
-              <article><h3 lang="en">Handlebar</h3></article>
+            <li class="format-item">
+              <article class="format-card">
+                <h3 lang="en">Handlebar</h3>
+                <p>Площа: до 120 м2</p>
+                <p>Меню: розширене меню</p>
+                <p>
+                  Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                  офіціанти-різнороби
+                </p>
+                <p>Посадкові місця: є</p>
+              </article>
             </li>
           </ul>
         </div>
